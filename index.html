@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Project: Etch-A-Sketch</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div></div>
-        <script src="main.js"></script>
-    </body>
+
+<head>
+    <title>Project: Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="controls">
+            <label for="slider-el">Choose Size:</label>
+            <input id="slider-el" type="range" min="1" max="64" value="16">
+        </div>
+        <div id="canvas-el" class="canvas"></div>
+
+    <script src="main.js"></script>
+</body>
+
 </html>

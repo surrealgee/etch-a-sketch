@@ -1,0 +1,47 @@
+:root {
+    --grid-columns: 16;
+    --grid-rows: 16;
+}
+
+body {
+    background-color: gray;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.black {
+    background-color: black;
+}
+
+.cell {
+    border: 1px solid black;
+}
+
+.cell:hover {
+    background-color: black;
+}
+
+input {
+    margin: 10px;
+}
