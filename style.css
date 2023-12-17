@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --square-width: 6.25%;
+    --square-height: 6.25%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,7 +20,7 @@ h1 {
 .grid-box {
     width: 80%;
     max-width: 960px;
-    min-height: 720px;
+    height: 720px;
     border: 2px solid black;
     margin: 0 auto;
     display: flex;
@@ -25,8 +30,8 @@ h1 {
 
 .square {
     border: 1px solid gray;
-    height: 50px;
-    flex: 1 1 6.25%;
+    height: var(--square-height);
+    flex: 1 1 var(--square-width);
 }
 
 .clicked {
