@@ -12,10 +12,19 @@ h1 {
     text-align: center;
 }
 
-.main-box {
+.grid-box {
     width: 80%;
     max-width: 960px;
-    height: 720px;
-    border: 1px solid black;
+    min-height: 720px;
+    border: 2px solid black;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.square {
+    border: 1px solid gray;
+    height: 50px;
+    flex: 1 1 6.25%;
 }
