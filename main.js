@@ -1,8 +1,12 @@
+// HTML Nodes
+const root = document.documentElement;
 const grid = document.querySelector('.grid-box');
 const sizeBtn = document.querySelector('#size-btn');
-const root = document.querySelector(':root');
+
+// Global Variables
 let gridSize = 16 * 16;
 
+// Event Listeners
 grid.addEventListener('mouseover', (e) => {
     e.stopPropagation();
     markGrid(e.target.id);
@@ -15,9 +19,11 @@ sizeBtn.addEventListener('click', () => {
     createGrid(newSize);
 })
 
-function changeGridSize(size) {
-    if (size > 100) size = 100;
-    return size * size
+// Functions
+function changeGridSize(gridSize) {
+    if (gridSize > 100) gridSize = 100;
+
+    return gridSize * gridSize
 }
 
 function createGrid(gridSize) {
@@ -33,8 +39,8 @@ function createGrid(gridSize) {
 }
 
 function markGrid(target) {
-    let gridSquare = document.getElementById(target);
-    gridSquare.classList.toggle('clicked');
+    let targetSquare = document.getElementById(target);
+    targetSquare.classList.toggle('clicked');
 }
 
 function setSquareSize(gridSize) {
@@ -45,5 +51,5 @@ function setSquareSize(gridSize) {
     root.style.setProperty("--square-height", sizePercent);
 }
 
-
+// Init Call
 createGrid(gridSize);
