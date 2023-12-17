@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-box {
+    width: 80%;
+    max-width: 960px;
+    height: 720px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
