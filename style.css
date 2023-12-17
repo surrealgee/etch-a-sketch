@@ -28,3 +28,17 @@ h1 {
     height: 50px;
     flex: 1 1 6.25%;
 }
+
+.clicked {
+    background-color: black;
+}
+
+.square:hover {
+    background-color: goldenrod;
+}
+
+#size-btn {
+    text-align: center;
+    display: block;
+    margin: 1em auto;
+}
